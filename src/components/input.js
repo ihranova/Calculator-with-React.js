@@ -5,8 +5,14 @@ class Input extends Component{
 	render(){
 		return(
 		<div id = "result">
-           <div className = "doingMath">9+5</div>
-           <div className = "answer">14</div>
+           <div className = "doingMath">
+            {(this.props.prev.length > 0) ?
+            	this.props.prev.join('')
+            	: null
+
+            }
+           </div>
+           <div className = "answer">{this.props.result}</div>
          </div>);
 	}
 

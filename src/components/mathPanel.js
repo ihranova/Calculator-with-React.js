@@ -21,13 +21,13 @@ class mathPanel extends Component{
         if(op === "C"|| op === "±" || op ==="÷" || op=== "x" || op === "-" || op === "+"){
           operand = "operand";
         }
-        return <Button key = {i} op = {operand} symbol = {op} />;
+        return <Button key = {i} op = {operand} symbol = {op} onClick = {this.props.passClick}/>;
       });
 
     })
   }       
     return(
-       <div id = "mathtable">{Panel()}</div>
+       <div id = "mathtable" >{Panel()}</div>
       );
   }
 }

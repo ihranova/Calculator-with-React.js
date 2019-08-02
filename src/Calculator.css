@@ -28,9 +28,7 @@
     transform-origin: 0px 0px 0px;
 
 }
-#root:hover:before{
-  content: none;
-}
+
 #result{
   height:200px;
   color:#fff;
