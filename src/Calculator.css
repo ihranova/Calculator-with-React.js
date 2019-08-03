@@ -46,7 +46,8 @@
   text-align:right;
   padding:20px;
   font-size:43px;
-  line-height:70px
+  line-height:70px;
+  overflow: hidden;
 }
 #mathtable{
   height:300px;
