@@ -76,19 +76,23 @@
   color:#7f8c8d;
 }
 .cell-operand:hover{color:#fff;}
-.cell:nth-child(16){
+.cell:nth-child(1){
+  width: 50%; 
+}
+   
+.cell:nth-child(15){
   background-color:#E91E63;
   height:120px;
   line-height:120px;
 }
-.cell:nth-child(17){
+.cell:nth-child(16){
     position: absolute;
     bottom:0;
     left: 0;
     width: 37.5%;
 
 }
-.cell:nth-child(18){
+.cell:nth-child(17){
     position: absolute;
     bottom:0;
     left: 37.5%;
