@@ -13,7 +13,8 @@ class Calculator extends Component {
         this.state = {
            
             current: '0',
-            previous: []
+            previous: [],
+            added: true
         }
         
     }
@@ -25,7 +26,8 @@ class Calculator extends Component {
         	this.setState({
         		
 	            current: '0',
-	            previous: []
+	            previous: [],
+                added: true
         	})
         }
         //add calculate on top
@@ -49,10 +51,18 @@ class Calculator extends Component {
 		            
 		        });
         	}else{
-        		this.setState({
-		            current: this.state.current + button,
-		            
-		        });
+                if((this.state.current.includes('.')) && button === '.'){
+            		this.setState({
+    		            current: this.state.current,
+    		            
+    		        });
+                }else{
+                    this.setState({
+                        current: this.state.current+button,
+                        
+                        
+                    });
+                }    
         	}
         	
         }
