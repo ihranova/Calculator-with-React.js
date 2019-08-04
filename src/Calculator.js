@@ -51,19 +51,18 @@ class Calculator extends Component {
 		            
 		        });
         	}else{
-                if((this.state.current.includes('.')) && button === '.'){
-            		this.setState({
-    		            current: this.state.current,
-    		            
-    		        });
-                }else{
-                    this.setState({
-                        current: this.state.current+button,
-                        
-                        
-                    });
-                }    
-        	}
+			let {current} = this.state.current;
+			if(current.includes('.') && button === '.'){
+				this.setState({
+				    current: this.state.current,
+
+				});
+			}else{
+			    this.setState({
+				current: this.state.current+button
+			    });
+			}    
+              }
         	
         }
         //calculate 
