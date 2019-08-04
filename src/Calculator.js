@@ -11,10 +11,9 @@ class Calculator extends Component {
         super(props);
 
         this.state = {
-           
             current: '0',
             previous: [],
-            added: true
+           
         }
         
     }
@@ -27,7 +26,7 @@ class Calculator extends Component {
         		
 	            current: '0',
 	            previous: [],
-                added: true
+                
         	})
         }
         //add calculate on top
