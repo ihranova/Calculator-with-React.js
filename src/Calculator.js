@@ -50,11 +50,11 @@ class Calculator extends Component {
 		            
 		        });
         	}else{
-			//let {current} = this.state;
+			let {current} = this.state;
 			//console.log(current.includes('.'));
 			//if(!current.includes('.')){
 			console.log(typeof this.state.current);
-			if(!(button === '.' && this.state.current.indexOf('.') > -1 )){
+			if(!(button === '.' && current.toString().indexOf('.') > -1 )){
 			    this.setState({
 				current: this.state.current+button
 			    });
