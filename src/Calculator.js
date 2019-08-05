@@ -51,6 +51,7 @@ class Calculator extends Component {
 		        });
         	}else{
 			let {current} = this.state;
+			console.log('current', current);
 			if(current.contains('.') && button === '.'){
 				this.setState({
 				    current: this.state.current,
