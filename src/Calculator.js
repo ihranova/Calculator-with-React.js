@@ -50,13 +50,14 @@ class Calculator extends Component {
 		            
 		        });
         	}else{
-			let {current} = this.state;
+			//let {current} = this.state;
 			//console.log(current.includes('.'));
 			//if(!current.includes('.')){
+			if(!(button === '.' && this.state.current.includes('.'))){
 			    this.setState({
 				current: this.state.current+button
 			    });
-			//}    
+			}    
               }
         	
         }
