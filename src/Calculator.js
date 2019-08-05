@@ -53,7 +53,7 @@ class Calculator extends Component {
 			//let {current} = this.state;
 			//console.log(current.includes('.'));
 			//if(!current.includes('.')){
-			if(!(button === '.' && this.state.current.includes('.'))){
+			if(!(button === '.' && this.state.current.indexOf('.') > -1 )){
 			    this.setState({
 				current: this.state.current+button
 			    });
