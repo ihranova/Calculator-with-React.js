@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Button from './button';
 
-class mathPanel extends Component {
-
+export default class mathPanel extends Component {
     render() {
         let symbol = {
             math: [
@@ -13,19 +12,16 @@ class mathPanel extends Component {
                 [0, "."]
             ]
         };
-        //console.log(symbol);
         let Panel = () => {
             return symbol.math.map((row, i) => {
                 return row.map((op, i) => {
-                    //console.log(op);
+                    //let rename operand
                     let operand = op;
-
                     if (op === "C" || op === "±" || op === "/" || op === "*" || op === "-" || op === "+") {
                         operand = "operand";
                     }
                     return <Button key = {i} op = {operand} symbol = {op} onClick = {this.props.passClick}/>;
                 });
-
             })
         }
         return (
@@ -33,5 +29,3 @@ class mathPanel extends Component {
         );
     }
 }
-
-export default mathPanel;
